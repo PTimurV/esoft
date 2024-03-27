@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; /* Цвет неба */
+}
+.house {
+    position: relative;
+    width: 200px; /* Ширина основания дома */
+    height: 150px; /* Высота основания дома */
+    background-color: #FFD700; /* Цвет дома */
+}
+.roof {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent; /* Половина ширины основания */
+    border-right: 100px solid transparent; /* Половина ширины основания */
+    border-bottom: 50px solid #8B4513; /* Цвет крыши */
+    position: absolute;
+    top: -50px; /* Смещение крыши над основанием */
+    left: 0;
+}
+.window {
+    width: 50px; /* Диаметр окна */
+    height: 50px; /* Диаметр окна */
+    background-color: #ADD8E6; /* Цвет окна */
+    border-radius: 50%; /* Округление окна */
+    position: absolute;
+    top: 40px; /* Расположение окна от верхнего края основания */
+    left: 40px; /* Расположение окна от левого края основания */
+}
+.door {
+    width: 40px; /* Ширина двери */
+    height: 80px; /* Высота двери */
+    background-color: #8B4513; /* Цвет двери */
+    position: absolute;
+    top: 70px; /* Расположение двери от верхнего края основания */
+    left: 140px; /* Расположение двери от левого края основания */
+}
+.door-handle {
+    width: 10px; /* Ширина ручки двери */
+    height: 10px; /* Высота ручки двери */
+    background-color: #C0C0C0; /* Цвет серебряной ручки */
+    border-radius: 50%; /* Округление ручки */
+    position: absolute;
+    top: 100px; /* Расположение ручки от верхнего края основания */
+    left: 161px; /* Расположение ручки от левого края основания */
+}
+.chimney {
+    width: 20px; /* Ширина дымохода */
+    height: 90px; /* Высота дымохода */
+    background-color: #A9A9A9; /* Цвет дымохода */
+    position: absolute;
+    top: -100px; /* Смещение дымохода над основанием */
+    left: 50px; /* Расположение дымохода от левого края основания */
+}
