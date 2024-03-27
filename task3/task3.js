@@ -21,7 +21,7 @@ function isValidParentheses(s) {
     return stack.length === 0;
 }
 
-// Примеры использования:
+// Проверки
 console.log(isValidParentheses("()"));       // true
 console.log(isValidParentheses("()[]{}"));   // true
 console.log(isValidParentheses("(]"));       // false
